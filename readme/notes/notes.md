@@ -8,29 +8,29 @@ OPDRACHT B
 ## Beoordeling
 
 - [ ] Classes en verantwoordelijkheden
-    - [ ] Klassendiagram
+    - [x] Klassendiagram
     - [ ] Code
         - [ ] class & object maken
     - [ ] Verantwoordingsdocument
 
 - [ ] Encapsulation
-    - [ ] Klassendiagram
-        - [ ] acces modifier
+    - [x] Klassendiagram
+        - [x] acces modifier
     - [ ] Code
         - [ ] get/set
         - [ ] public & protected
     - [ ] Verantwoordingsdocument
 
 - [ ] Composition
-    - [ ] Klassendiagram
-        - [ ] composition op de goede plek
+    - [x] Klassendiagram
+        - [x] composition op de goede plek
     - [ ] Code
         - [ ] functie in composition
     - [ ] Verantwoordingsdocument
 
 - [ ] Inheritance
-    - [ ] Klassendiagram
-            - [ ] inheritance op de goede plek
+    - [x] Klassendiagram
+            - [x] inheritance op de goede plek
     - [ ] Code
     - [ ] Verantwoordingsdocument
 
@@ -38,77 +38,6 @@ OPDRACHT B
 
 ## Opdracht - Breakout
 
-### UML
-
-```ts
-
-- class Game {
-    + score : number
-    + lives : number = 3
-    - gameOver : boolean = false
-    |
-    - gameLoop()
-    - checkCollision(a : ClientRect, b : ClientRect) : boolean
-    + changeScore(amount : number)
-    + changeLives(amount : number)
-    |
-    has class Paddle {
-        - inputLeft : number
-        - inputRight : number
-        - posX : number = clientWidth / 2
-        - posY : number = clientHeight - 10
-        - speedX : number = 7
-        |
-        + spawn()
-        + update()
-        + reset()
-        - onKeyUp()
-        - onKeyDown()
-        + getRectangle()
-    }
-    has class Ball {
-        - posX : number = Paddle.posX
-        - posY : number = Paddle.posY - 10
-        - speedX : number = 3
-        - speedY : number = -7
-        |
-        + spawn()
-        + update()
-        + reset()
-        + checkBrickCollision()
-        + checkPaddleCollision()
-        + checkBorderCollision()
-        + bounceX()
-        + bounceY()
-        + getRectangle()
-    }
-    has class Grid {
-        - posX : number
-        - posY : number
-        - sizeX : number
-        - sizeY : number
-        |
-        + spawnBrick()
-        |
-        has class Brick {
-            - posX : number
-            - posY : number
-            |
-            + spawn()
-            + hit()
-            + getRectangle()
-            |
-            class PurpleBrick extends Brick {
-                - color = purple
-            }
-            class RedBrick extends Brick {
-                - color = red
-            }
-        }
-    }
-}
-
-```
 
 ### Paddle
 - [ ] Startpositie

@@ -47,8 +47,14 @@ paddle {
     background-image: url(../images/paddleRed.png);
 }
 
-brick {
+purpleBrick {
     width:64px; height:32px;
     background-image: url(../images/brick-purple.png);
 }
+
+redBrick {
+    width:64px; height:32px;
+    background-image: url(../images/brick-red.png);
+}
+
 

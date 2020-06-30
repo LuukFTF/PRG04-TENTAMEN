@@ -5,6 +5,7 @@ Heb je een oneven studentnummer dan werk je opdracht B uit
 
 OPDRACHT B
 
+## Beoordeling
 
 - [ ] Classes en verantwoordelijkheden
     - [ ] Klassendiagram
@@ -34,3 +35,4 @@ OPDRACHT B
     - [ ] Verantwoordingsdocument
 
 
+## Opdracht
